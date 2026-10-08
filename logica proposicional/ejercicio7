@@ -1,0 +1,7 @@
+compras = float(input("ingrese el valor de compras: "))
+registro = input("el cliente esta registrado?: ")
+
+if compras > 500000 and registro == "si":
+    print("el cliente es VIP")
+else:
+    print("el cliente no es VIP")

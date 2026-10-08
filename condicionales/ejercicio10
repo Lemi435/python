@@ -1,0 +1,12 @@
+print("C = 1.0 - 3.0")
+print("B = 3.0 - 4.5")
+print("A = 4.5 - 5.0")
+
+nota = float(input("ingrese la nota: "))
+
+if nota >= 4.5:
+    print("calificación: A")
+elif nota >= 3.0:
+    print("calificación: B")
+else:
+    print("calificación: C")

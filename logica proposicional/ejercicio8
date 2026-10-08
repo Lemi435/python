@@ -1,0 +1,11 @@
+num = int(input("ingrese el numero: "))
+
+if num > 0:
+    print("el numero es positivo")
+else:
+    print("el numero no es positivo")
+
+if num % 2 == 0:
+    print("el numero es par")
+else:
+    print("el numero es impar")

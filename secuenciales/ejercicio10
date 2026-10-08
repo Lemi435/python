@@ -1,0 +1,5 @@
+print("se gastan 0,08 litros de gasolina por cada km recorrido")
+
+gasolina = float(input("ingrese la cantidad de km recorridos: "))
+
+print("la cantidad de litros de gasolina gastados es: ", gasolina * 0.08)

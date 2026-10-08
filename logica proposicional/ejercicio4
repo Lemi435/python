@@ -1,0 +1,7 @@
+ingresos = float(input("ingrese sus ingresos mensuales: "))
+condicionEspecial = input("cuenta con alguna condicion especial?: ")
+
+if ingresos < 2000000 and condicionEspecial == "si":
+    print("la persona aplica al subsidio")
+else:
+    print("la persona no aplica al subsidio")

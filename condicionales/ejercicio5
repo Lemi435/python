@@ -1,0 +1,8 @@
+print("se aprueba de 3.5 para adelante")
+
+nota = float(input("ingrese la nota final: "))
+
+if nota >= 3.5:
+    print("aprueba")
+else:
+    print("no aprueba")

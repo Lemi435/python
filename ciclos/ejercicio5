@@ -1,0 +1,9 @@
+n = int(input("¿Cuántos números desea ingresar? "))
+suma = 0
+
+for i in range(n):
+    numero = float(input(f"Ingrese el número {i + 1}: "))
+    suma += numero
+
+promedio = suma / n
+print("El promedio es:", promedio)

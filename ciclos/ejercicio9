@@ -1,0 +1,9 @@
+n = int(input("ingrese cuantos numeros desea ingresar: "))
+mayores = 0
+
+for i in range(n):
+    numero = float(input(f"ingrese el numero{i+1}: "))
+    if numero > 50:
+        mayores += 1
+
+print("cantidad de numeros mayores a 50: ", mayores)

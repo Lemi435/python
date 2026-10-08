@@ -1,0 +1,15 @@
+ventas = 0
+
+while True:
+    opcion = input("¿Desea registrar una venta? (s/n): ")
+
+    if opcion == 'n':
+        break
+
+    if opcion == 's':
+        precio = float(input("Ingrese el valor de la venta: "))
+        ventas += precio
+    else:
+        print("Opción inválida. Use 's' o 'n'.")
+
+print("Total de ventas registradas:", ventas)

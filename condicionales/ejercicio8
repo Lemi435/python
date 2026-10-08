@@ -1,0 +1,9 @@
+print("el impuesto se empieza a cobrar desde los 3000000 de salario mensual, y se aplica un 10% del mismo")
+
+salario = int(input("ingrese el salario mensual: "))
+
+
+if salario >= 3000000:
+    print("el impuesto aplica, el valor final del mismo es: ",  salario * 10 /100)
+else:
+    print("el impuesto no aplica")

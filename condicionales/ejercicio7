@@ -1,0 +1,8 @@
+contraseña = "435frt12"
+
+contraseñaIngresada = input("ingrese la contraseña: ")
+
+if contraseñaIngresada == contraseña:
+    print("bienvenido")
+else:
+    print("contraseña incorrecta")

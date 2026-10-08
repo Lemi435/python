@@ -1,0 +1,9 @@
+n = int(input("¿Cuántos números desea ingresar? "))
+positivos = 0
+
+for i in range(n):
+    numero = float(input(f"Ingrese el número {i + 1}: "))
+    if numero > 0:
+        positivos += 1
+
+print("Cantidad de números positivos:", positivos)

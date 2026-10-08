@@ -1,0 +1,11 @@
+suma = 0
+
+while True:
+    valor = input("Ingrese un número o 'fin' para terminar: ")
+
+    if valor() == "fin":
+        break
+
+    suma += float(valor)
+
+print("La suma total es:", suma)

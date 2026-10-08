@@ -1,0 +1,4 @@
+base = float(input("ingrese la base del rectangulo: "))
+altura = float(input("ingrese la altura del rectangulo"))
+
+print("el perimetro del rectangulo es: ", (base*2) + (altura*2))

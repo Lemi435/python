@@ -1,0 +1,6 @@
+nota = float(input("ingrese la nota del estudiante: "))
+
+if nota >= 3.0:
+    print("el estudiante aprobo")
+else:
+    print("el estudiante no aprobo")

@@ -1,0 +1,12 @@
+diasTrabajados = int(input("Ingrese la cantidad de días trabajados: "))
+salarioPorDia = float(input("ingrese el pago por dia: "))
+ifHorasExtras = input("trabajo horas extras?: ")
+
+if ifHorasExtras == "si":
+    horasExtras = int(input("ingrese las horas extras trabajadas: "))
+    pagoExtra = float(input("ingrese el valor por hora extra: "))
+    sueldo = (diasTrabajados*salarioPorDia) + (horasExtras * pagoExtra)
+else:
+    sueldo = diasTrabajados * salarioPorDia
+
+print("el sueldo es: ", sueldo)

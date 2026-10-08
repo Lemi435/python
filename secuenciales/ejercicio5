@@ -1,0 +1,3 @@
+añoNacimiento = int(input("ingrese el año en el que nacio: "))
+
+print("su edad es: ", 2026-añoNacimiento)

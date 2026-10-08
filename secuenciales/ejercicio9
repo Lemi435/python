@@ -1,0 +1,4 @@
+compra = float(input("ingrese el valor de compra: "))
+iva = compra * 19/100
+
+print("el IVA es: ", iva, " y el valor final a pagar es: ", compra + iva)

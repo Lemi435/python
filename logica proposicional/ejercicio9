@@ -1,0 +1,8 @@
+usuario = input("Ingrese su usuario: ")
+edad = int(input("Ingrese su edad: "))
+registrado = input("¿Está registrado? (si/no): ") == "si"
+
+if usuario == "admin" and (edad >= 18 or registrado) and not usuario == "invitado":
+    print("El usuario cumple todas las condiciones.")
+else:
+    print("El usuario no cumple las condiciones.")

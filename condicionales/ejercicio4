@@ -1,0 +1,9 @@
+print("si una compra es mayor a 100000, se aplica un descuento del 20%")
+
+compra = float(input("ingrese el valor de la compra: "))
+
+
+if compra > 100000:
+    print("el descuento aplica, el valor final de la compra es: ", compra - (compra * 20 /100))
+else:
+    print("el descuento no aplica, el valor de la compra es: ", compra)

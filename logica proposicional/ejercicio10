@@ -1,0 +1,10 @@
+print("AVISO: hoy, los productos de ferreteria con precio igual o mayor a 20000 pesos tienen un 50% de descuento")
+
+categoria = input("ingrese la categoria del producto: ")
+precio = int(input("ingrese el precio del producto: "))
+precioDescuento = precio / 2
+
+if categoria == "ferreteria" and precio >= 20000:
+    print("el descuento aplica, el precio es: ", precioDescuento)
+else:
+    print("el descuento no aplica, el precio es:", precio)

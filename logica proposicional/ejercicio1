@@ -1,0 +1,13 @@
+usuario = "p8rio"
+contraseña = 43512
+
+usuarioIngresado=input("ingrese el usuario: ")
+
+if usuarioIngresado == usuario:
+    contraseñaIngresada=int(input("ingrese la contraseña: "))
+    if contraseñaIngresada == contraseña:
+        print("Bienvenido")
+    else:
+        print("Contraseña incorrecta")
+else:
+    print("Usuario incorrecto")
