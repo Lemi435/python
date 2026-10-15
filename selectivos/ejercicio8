@@ -1,0 +1,48 @@
+'''
+Tomando como base los resultados obtenidos en un laboratorio de análisis clínicos, un médico determina si una persona tiene anemia o no, lo cual depende de su nivel de hemoglobina en la sangre, de su edad y de su sexo. Si el nivel de hemoglobina que tiene una persona es menor que el rango que le corresponde, se determina su resultado como positivo y en caso contrario como negativo. La tabla en la que el médico se basa para obtener el resultado es la siguiente: 
+'''
+
+nivelHemoglobina = float(input("ingrese su nivel de hemoglobina en la sangre en g%: "))
+rangoEdad = int(input("seleccione un numero del 1 al 8 segun su rango de edad\n1 = 0 - 1 mes\n2 = 1 - 6 meses\n3 = 6 - 12 meses\n4 = 1 - 5 años\n5 = 5 - 10 años\n6 = 10 - 15 años\n7 = mujeres > 15 años\n8 = hombres > 15 años\n1 - 8?: "))
+
+match rangoEdad:
+    case 1:
+        if nivelHemoglobina < 13:
+            print("POSITIVO")
+        else:
+            print("NEGATIVO")
+    case 2:
+            if nivelHemoglobina < 10:
+                print("POSITIVO")
+            else:
+                print("NEGATIVO")
+    case 3:
+            if nivelHemoglobina < 11:
+                print("POSITIVO")
+            else:
+                print("NEGATIVO")
+    case 4:
+            if nivelHemoglobina < 11.5:
+                print("POSITIVO")
+            else:
+                print("NEGATIVO")
+    case 5:
+            if nivelHemoglobina < 12.6:
+                print("POSITIVO")
+            else:
+                print("NEGATIVO")
+    case 6:
+            if nivelHemoglobina < 13:
+                print("POSITIVO")
+            else:
+                print("NEGATIVO")
+    case 7:
+            if nivelHemoglobina < 12:
+                print("POSITIVO")
+            else:
+                print("NEGATIVO")
+    case 8:
+            if nivelHemoglobina < 14:
+                print("POSITIVO")
+            else:
+                print("NEGATIVO")

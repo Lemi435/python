@@ -1,0 +1,19 @@
+'''
+Calcular el total a pagar por la compra de zapatillas. Si se compran tres  o más zapatillas se aplica un descuento del 20% sobre el total de la compra y si son menos de tres zapatillas un descuento del 10%. Mostrar en pantalla, el valor de la compra, el valor del descuento y el valor a pagar una vez aplicado el descuento. 
+'''
+
+cantidadZap = int(input("Ingrese la cantidad de zapatillas a comprar: "))
+valorUnitario = float(input("Ingrese el valor unitario de las zapatillas: "))
+
+if cantidadZap >= 3:
+    descuento = 0.20
+else:
+    descuento = 0.10
+
+totalCompra = cantidadZap * valorUnitario
+valorDescuento = totalCompra * descuento
+valorPagar = totalCompra - valorDescuento
+
+print("Valor de la compra: ", totalCompra)
+print("Valor del descuento: ", valorDescuento)
+print("Valor a pagar: ", valorPagar)

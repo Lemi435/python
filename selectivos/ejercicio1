@@ -1,0 +1,16 @@
+'''
+Determinar si un aprendiz aprueba o desaprueba Algoritmia, sabiendo que aprobará si su promedio de tres calificaciones es mayor o igual a 70; reprueba en caso contrario. 
+'''
+
+nota1 = int(input("ingrese la primera nota: "))
+nota2 = int(input("ingrese la segunda nota: "))
+nota3 = int(input("ingrese la tercera nota: "))
+
+promedio = (nota1 + nota2 + nota3)/3
+
+print("el promedio es: ", promedio)
+
+if promedio >= 70:
+    print("aprobo algoritmia")
+else:
+    print("no aprobo algoritmia")

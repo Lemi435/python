@@ -1,0 +1,12 @@
+pension = 420000
+promedio = float(input("ingrese el promedio obtenido en el ultimo periodo: "))
+
+if promedio >= 4:
+    descuento = pension * 0.3
+    iva = 0
+else:
+    descuento = 0
+    iva = pension * 0.1
+
+print("el estudiante debe pagar: ", pension - descuento + iva)
+
