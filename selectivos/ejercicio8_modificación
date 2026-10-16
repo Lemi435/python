@@ -66,3 +66,4 @@ match rangoEdad:
             print("sano")
         else:
             print("poliglobulia")
+

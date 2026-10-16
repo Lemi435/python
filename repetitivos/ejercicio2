@@ -1,0 +1,13 @@
+'''
+Leer 10 números negativos y convertirlos a positivos e imprimir la suma de dichos números. 
+'''
+
+suma = 0
+
+for i in range(10):
+    numero = float(input(f"ingrese el numero {i+1}: "))
+    if numero < 0:
+        numero = numero / -1
+    suma += numero
+
+print("la suma es: ", suma)

@@ -1,0 +1,52 @@
+'''
+La oficina de tránsito de Ibagué desea saber, de los n autos que entran a la ciudad de Ibagué, cuantos entran con calcomanía de cada color. Conociendo el ultimo dígito de la placa de cada carro, se puede determinar el color de la calcomanía utilizando la siguiente relación:
+'''
+
+amarilla = 0
+rosa = 0
+roja = 0
+verde = 0
+azul = 0
+
+n = int(input("Ingrese la cantidad de autos que entran a la ciudad: "))
+
+for i in range(n):
+    placa = input(f"Ingrese el último dígito de la placa del auto {i+1}: ")
+    if placa == "0" or placa == "1":
+        amarilla += 1
+    elif placa == "2" or placa == "3":
+        rosa += 1
+    elif placa == "4" or placa == "5":
+        roja += 1
+    elif placa == "6" or placa == "7":
+        verde += 1
+    elif placa == "8" or placa == "9":
+        azul += 1
+
+while True:
+    print("===== MENÚ =====")
+    print("1. Ver cantidad de autos con calcomanía amarilla")
+    print("2. Ver cantidad de autos con calcomanía rosa")
+    print("3. Ver cantidad de autos con calcomanía roja")
+    print("4. Ver cantidad de autos con calcomanía verde")
+    print("5. Ver cantidad de autos con calcomanía azul")
+    print("6. Salir")
+    print("================")
+
+    opcion = input("Elige una opción (1-6): ").strip()
+
+    if opcion == "1":
+        print(f">>> Cantidad de autos con calcomanía amarilla: {amarilla}\n")
+    elif opcion == "2":
+        print(f">>> Cantidad de autos con calcomanía rosa: {rosa}\n")
+    elif opcion == "3":
+        print(f">>> Cantidad de autos con calcomanía roja: {roja}\n")
+    elif opcion == "4":
+        print(f">>> Cantidad de autos con calcomanía verde: {verde}\n")
+    elif opcion == "5":
+        print(f">>> Cantidad de autos con calcomanía azul: {azul}\n")
+    elif opcion == "6":
+        print(">>> Saliendo del programa. ¡Hasta luego!")
+        break
+    else:
+        print(">>> Opción no válida. Intenta de nuevo.\n")

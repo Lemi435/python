@@ -1,0 +1,53 @@
+'''
+un grupo de 23 estudiantes presentan un examen de algoritmia. Hacer un algoritmo que lea por cada estudiante la calificación obtenida. Al finalizar calcule e imprima:
+•
+La cantidad de estudiantes que obtuvieron una calificación menor a 50.
+•
+La cantidad de estudiantes que obtuvieron una calificación de 50 o más pero menor que 70.
+•
+La cantidad de estudiantes que obtuvieron una calificación de 70 o más pero menor que 80.
+•
+La cantidad de estudiantes que obtuvieron una calificación de 80 o más.
+La calificación obtenida en el examen de algoritmia debe ser entre 1 y 100.
+'''
+
+menor50 = 0
+entre50y70 = 0
+entre70y80 = 0
+mayor80 = 0
+
+for i in range(23):
+    nota = float(input(f"ingrese la nota del estudiante {i+1}: "))
+    if nota < 50:
+        menor50 += 1
+    elif nota >= 50 and nota < 70:
+        entre50y70 += 1
+    elif nota >= 70 and nota < 80:
+        entre70y80 += 1
+    elif nota >= 80:
+        mayor80 += 1
+
+while True:
+    print("===== MENÚ =====")
+    print("1. ver cantidad de estudiantes con calificación menor a 50")
+    print("2. ver cantidad de estudiantes con calificación entre 50 y 70")
+    print("3. ver cantidad de estudiantes con calificación entre 70 y 80")
+    print("4. ver cantidad de estudiantes con calificación mayor a 80")
+    print("5. Salir")
+    print("================")
+
+    opcion = input("Elige una opción (1-5): ").strip()
+
+    if opcion == "1":
+        print(f">>> Cantidad de estudiantes con calificación menor a 50: {menor50}\n")
+    elif opcion == "2":
+        print(f">>> Cantidad de estudiantes con calificación entre 50 y 70: {entre50y70}\n")
+    elif opcion == "3":
+        print(f">>> Cantidad de estudiantes con calificación entre 70 y 80: {entre70y80}\n")
+    elif opcion == "4":
+        print(f">>> Cantidad de estudiantes con calificación mayor a 80: {mayor80}\n")
+    elif opcion == "5":
+        print(">>> Saliendo del programa. ¡Hasta luego!")
+        break
+    else:
+        print(">>> Opción no válida. Intenta de nuevo.\n")

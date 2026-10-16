@@ -1,0 +1,61 @@
+'''
+Pedir los datos de los alumnos, estos son: sexo, edad y altura. Al final del programa se deberá mostrar la cantidad de hombres, la cantidad de mujeres, la altura promedio ,la cantidad de alumnos que tienen una altura mayor a 1.70 cm, la cantidad de alumnos que tiene una altura menor o igual a 1.50 cm. El programa debe finalizar cuando la edad sea igual a 0.
+'''
+
+hombres = 0
+mujeres = 0
+sumaAlturas = 0
+alumnosAlturaMayor170 = 0
+alumnosAlturaMenorIgual150 = 0
+
+while True:
+    edad = int(input("Ingrese la edad del alumno (0 para finalizar): "))
+    if edad == 0:
+        break
+
+    sexo = input("Ingrese el sexo del alumno (h/m): ").lower()
+    edad = int(input("Ingrese la edad del alumno: "))
+    altura = float(input("Ingrese la altura del alumno en metros: "))
+
+    sumaAlturas += altura
+
+    if sexo == "h":
+        hombres += 1
+    elif sexo == "m":
+        mujeres += 1
+
+    if altura > 1.70:
+        alumnosAlturaMayor170 += 1
+    elif altura <= 1.50:
+        alumnosAlturaMenorIgual150 += 1
+
+
+while True:
+    print("===== MENÚ =====")
+    print("1. ver cantidad de hombres")
+    print("2. ver cantidad de mujeres")
+    print("3. ver altura promedio")
+    print("4. ver cantidad de alumnos con altura mayor a 1.70 m")
+    print("5. ver cantidad de alumnos con altura menor o igual a 1.50 m")
+    print("6. Salir")
+    print("================")
+
+    opcion = input("Elige una opción (1-6): ").strip()
+
+    if opcion == "1":
+        print(f">>> Cantidad de hombres: {hombres}\n")
+    elif opcion == "2":
+        print(f">>> Cantidad de mujeres: {mujeres}\n")
+    elif opcion == "3":
+        totalAlumnos = hombres + mujeres
+        alturaPromedio = sumaAlturas / totalAlumnos
+        print(f">>> Altura promedio: {alturaPromedio:.2f}\n")
+    elif opcion == "4":
+        print(f">>> Cantidad de alumnos con altura mayor a 1.70 m: {alumnosAlturaMayor170}\n")
+    elif opcion == "5":
+        print(f">>> Cantidad de alumnos con altura menor o igual a 1.50 m: {alumnosAlturaMenorIgual150}\n")
+    elif opcion == "6":
+        print(">>> Saliendo del programa. ¡Hasta luego!")
+        break
+    else:
+        print(">>> Opción no válida. Intenta de nuevo.\n")

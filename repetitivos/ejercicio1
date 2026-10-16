@@ -1,0 +1,18 @@
+'''
+Leer 20 números e imprimir cuantos son  positivos, cuantos negativos y cuantos neutros. 
+'''
+
+positivos = 0
+neutro = 0
+negativos = 0
+
+for i in range (20):
+    numero = float(input(f"ingrese el numero {i + 1}: "))
+    if numero > 0:
+        positivos += 1
+    elif numero == 0:
+        neutro += 1
+    else:
+        negativos += 1
+
+print("positivos: ", positivos, "\nneutros: ", neutro, "\nnegativos: ", negativos)

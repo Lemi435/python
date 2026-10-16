@@ -1,0 +1,44 @@
+'''
+Calcular el promedio de edades de hombres, mujeres y de todo un grupo de alumnos.
+'''
+
+cantidad = int(input("ingrese la cantidad de estudiantes del salon: "))
+mujeres = 0
+hombres = 0
+suma_mujeres = 0
+suma_hombres = 0
+
+for i in range(cantidad):
+    genero = input(f"ingrese el genero (f/m) de la persona {i+1}: ")
+    edad = int(input(f"ingrese la edad de la persona {i+1}: "))
+    
+    if genero == "f":
+        mujeres += 1
+        suma_mujeres += edad
+    elif genero == "m":
+        hombres += 1
+        suma_hombres += edad
+
+while True:
+    print("===== MENÚ =====")
+    print("1. ver promedio de mujeres")
+    print("2. ver promedio de hombres")
+    print("3. ver promedio total")
+    print("4. Salir")
+    print("================")
+
+    opcion = input("Elige una opción (1-4): ").strip()
+
+    if opcion == "1":
+            print(f">>> Promedio de mujeres: {suma_mujeres/mujeres}\n")
+    elif opcion == "2":
+            print(f">>> Promedio de hombres: {suma_hombres/hombres}\n")
+    elif opcion == "3":
+        total_estudiantes = mujeres + hombres
+        promedio_total = (suma_mujeres + suma_hombres) / total_estudiantes
+        print(f">>> Promedio total: {promedio_total}\n")
+    elif opcion == "4":
+        print(">>> Saliendo del programa. ¡Hasta luego!")
+        break
+    else:
+        print(">>> Opción no válida. Intenta de nuevo.\n")
