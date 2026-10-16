@@ -1,3 +1,7 @@
+'''
+ Se ha establecido un programa para estimular a los alumnos, el cual consiste en lo siguiente: si el promedio obtenido por un alumno en el último periodo es mayor o igual que 4.0, se le hará un descuento del 30% sobre la pensión; si el promedio obtenido es menor que 4.0 deberá pagar la pensión completa, la cual incluye el 10% de IVA. Obtener cuanto debe pagar un alumno. 
+'''
+
 pension = 420000
 promedio = float(input("ingrese el promedio obtenido en el ultimo periodo: "))
 
@@ -9,4 +13,6 @@ else:
     iva = pension * 0.1
 
 print("el estudiante debe pagar: ", pension - descuento + iva)
+
+
 
