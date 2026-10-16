@@ -25,7 +25,7 @@ while True:
     opcion = input("Elige una opción (1-4): ").strip()
 
     if opcion == "1":
-        print("promedio: ", suma/5)
+        print("promedio: ", suma/20)
     elif opcion == "2":
         print("mayor nota: ", mayor)
     elif opcion == "3":
