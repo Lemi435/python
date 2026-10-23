@@ -6,7 +6,7 @@ positivos = 0
 neutro = 0
 negativos = 0
 
-for i in range (20):
+for i in range(20):
     numero = float(input(f"ingrese el numero {i + 1}: "))
     if numero > 0:
         positivos += 1

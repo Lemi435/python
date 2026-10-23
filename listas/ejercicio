@@ -1,0 +1,70 @@
+'''1'''
+
+aprendices = []
+edades = []
+
+for i in range(20):
+    aprendices.append(input(f"ingrese el nombre del aprendiz {i+1}: "))
+    edades.append(input(f"ingrese la edad del aprendiz {i+1}: "))
+
+'''2'''
+
+for i in range(20):
+    print(f"aprendiz {i+1} \nnombre: {aprendices[i]} \nedad: {edades[i]}")
+
+'''3'''
+
+edadMax = edades.index(max(edades))
+
+print(f"estudiante con la mayor edad: {aprendices[edadMax]}")
+
+'''4'''
+
+aprendices.insert (1, "Sandra")
+edades.insert(1, "30")
+
+'''5'''
+
+mayoresDe18 = 0
+
+for edad in edades:
+    if edad >= 18:
+        mayoresDe18 += 1
+
+print(f"aprendices mayores de 18 años: {mayoresDe18}")
+
+'''6'''
+
+aprendices.append("yuli")
+edades.append("17")
+
+'''7'''
+
+aprendices.pop(1)
+edades.pop(1)
+
+'''8'''
+
+buscar = input("ingrese el aprendiz que desea buscar: ")
+
+if buscar in aprendices:
+    print("el aprendiz se encuentra en la lista")
+else:
+    print("el aprendiz no se encuentra en la lista")
+
+'''9'''
+
+print(aprendices[:10])
+
+'''10'''
+
+print(aprendices[-10:])
+
+'''11'''
+
+print(aprendices[10:21])
+
+'''12'''
+
+aprendicesPares = aprendices[::2]
+print(f"aprendices con indice par: {aprendicesPares}")
